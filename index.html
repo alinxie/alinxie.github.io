@@ -2,13 +2,64 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>D3 Test</title>
+        <title>Andrew Linxie</title>
         <script type="text/javascript" src="d3/d3.js"></script>
     </head>
     <body>
-        <h1> HELLO <h1>
+        <h1> Andrew Linxie </h1>
+        <h3> Computer Science and Statistics Major at UC Berkeley </h3>
+        <br>
+        <p> It seems like I have given the wrong link to my github. Here is my github link. </p>
+        <a href = 'https://www.github.com/alinxie'> Actual Github Link</a>
+        <br>
+        </div>
+        <style>
+            body {
+                background-color: black;
+                font-family: 'Lucida Console', Monaco, monospace;
+                color: white;
+            }
+            h1 {
+                font-family: 'Lucida Console', Monaco, monospace;
+                color: white;
+            }
+            h3 {
+                font-family: 'Lucida Console', Monaco, monospace;
+                color: white;
+            }
+
+            a {
+                font-size: 50px;
+            }
+            div.bar {
+                display: inline-block;
+                width: 20px;
+                height:75px;
+                background-color: teal;
+                margin-right: 2px;
+            }
+        </style>
         <script type="text/javascript">
             // Your beautiful D3 code will go here
+            var dataset = [];
+            for (var i = 0; i < 30; i ++) {
+                var newNumber = Math.random() * 30
+                dataset.push(newNumber);
+            }
+            d3.select('body').selectAll('div')
+                .data(dataset)
+                .enter()
+                .append('div')
+                .attr('class', 'bar')
+                .style('height', function(d) {
+                    return d*10 + 'px'})
+                .style("background-color", function(d) {
+                    if (d > 15) {   //Threshold of 15
+                        return "#12A1B4";
+                    } else {
+                        return "#A4A2FF";
+                    }});
         </script>
+        
     </body>
 </html>     
