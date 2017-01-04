@@ -24,11 +24,29 @@ h1 {
     
 }
 
+#random-image{
+    position: fixed;
+    z-index: 1;
+    width: 50px;
+    height: auto;
+}
 #letter-body {
     border-style: double;
     height: 100%;
     width: 60%;
     background-color: #e4d4f9;
+    z-index: 2;
+    display:block;
+
+}
+
+.btn-group {
+    position: fixed;
+    z-index: 3;
+    top: 10px;
+    right: 40px;
+    width: 10%;
+    float: right;
 }
 
 #paragraph {
