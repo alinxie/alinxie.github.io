@@ -14,7 +14,9 @@ function randelay() {
     return Math.random() * 3000
 }
 
+function tumblrImages(accnt, tags) {
 
+}
 console.log(randomx())
 console.log(randomy())
 
@@ -41,7 +43,7 @@ function populate() {
         .style('left', function(d) {
             return randomx() + 'px';
         })
-        .style('opacity', '0');
+        .style('opacity', '0.5');
     delays = []
     for (var i = 0; i < randNum; i ++) {
 
