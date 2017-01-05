@@ -11,7 +11,7 @@ function randomy() {
 }
 
 function randelay() {
-    return Math.random() * 3000
+    return Math.random() * 1000
 }
 
 function tumblrImages(accnt, tags) {
@@ -22,7 +22,7 @@ console.log(randomy())
 
 function populate() {
     var random_image_list = [];
-    var randNum = 200;
+    var randNum = 700;
     for (var i = 0; i < randNum; i ++) {
         var randIndex = Math.round(image_list_length * Math.random());
         random_image_list.push(andrew_isa_image_list[randIndex]);
@@ -43,16 +43,14 @@ function populate() {
         .style('left', function(d) {
             return randomx() + 'px';
         })
-        .style('opacity', '0.5');
-    delays = []
-    for (var i = 0; i < randNum; i ++) {
-
-    }
+        .style('opacity', '0');
+    setTimeout(function(){
     d3.select('body').selectAll('img')
         .transition()
-        .style('opacity', '0.5')
+        .style('opacity', '0.65')
         .duration(2000)
         .delay(randelay());
+    }, 500);
         
 
 
