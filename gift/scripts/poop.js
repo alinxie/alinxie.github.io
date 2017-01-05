@@ -23,6 +23,7 @@ console.log(randomy())
 function populate() {
     var random_image_list = [];
     var randNum = 700;
+    var randNum = 500;
     for (var i = 0; i < randNum; i ++) {
         var randIndex = Math.round(image_list_length * Math.random());
         random_image_list.push(andrew_isa_image_list[randIndex]);
