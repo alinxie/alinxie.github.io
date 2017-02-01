@@ -1,0 +1,71 @@
+ body {
+    background-color: black;
+    color: white;
+    font-family: monaco;
+}
+
+h1 {
+    font-size: 96px;
+    font-family: monaco;
+}
+
+h3 {
+    font-family: monaco;
+}
+a {
+    font-size: 20px;
+}
+div.bar {
+    display: inline-block;
+    width: 20px;
+    height:75px;
+    margin-right: 2px;
+}
+
+#section1 {
+    padding-top: 150px;
+    height: 700px;
+    text-align: center;
+    position: relative;
+}
+
+#introduction{
+    padding-top: 150px;
+    text-align: center;
+    height: 700px;
+    position: relative;
+}
+
+#projects{
+    text-align: center;
+    height: 700px;
+}
+
+#bargraph {
+    margin-top : 10px;
+    height: 200px;
+}
+
+.nav-item {
+	float: left;
+	font-size: 23px;
+    height: 100%;
+    padding: 15px 15px;
+    -webkit-transition: 1s; /* Safari */
+    transition: 1s;
+}
+.nav-item:hover {
+    opacity: 0.5;
+    background-color: white;
+}
+.navbar-nav {
+	height: 60px;
+	float: right;
+    text-align: center;
+    align-items: center;
+}
+.background {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
