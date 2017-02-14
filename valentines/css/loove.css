@@ -1,0 +1,39 @@
+body {
+    background: url("../images/16731653_1922335594655836_688879870_o.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+    z-index: 0;
+}
+
+h1 {
+    color: #ffa3c9;
+    font-family: "Comic Sans MS", cursive;
+    font-variant: normal;
+    font-weight: normal;
+    text-shadow: 0 0 3px #000; /* horizontal-offset vertical-offset 'blur' colour */
+    -moz-text-shadow: 0 0 3px #000;
+    -webkit-text-shadow: 0 0 3px #000;
+    z-index: 2;
+}
+
+.poem-container {
+    border-style: outset;
+    border-color: #ffa3c9;
+    display: block;
+    margin: auto;
+    width: 60%;
+    padding:30px 30px 30px 30px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    background-color: #9ea9ff;
+    z-index: 1;
+    border-radius: 10px;
+    margin-top: 90px;
+}
+
+audio {
+    margin-top: 20px;
+}

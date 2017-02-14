@@ -16,7 +16,7 @@ d3.select('#bargraph').selectAll('div')
         } else {
             return "#A4A2FF";
         }})
-    .transition()
+    .transition(1000)
     .style('height', function(d) {
         return d*10 + 'px'});
 
